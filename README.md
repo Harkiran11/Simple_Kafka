@@ -13,7 +13,7 @@
 
 ## Overview
 
-SimpleKafka is a from scratch implementation of core Apache Kafka internals. It demonstrates distributed systems concepts including partitioned logs leader follower replication cluster coordination via ZooKeeper and custom binary protocol design. Built to showcase low level systems programming and distributed architecture skills.
+SimpleKafka is a from scratch implementation of core Apache Kafka internals. It demonstrates distributed systems concepts including partitioned logs leader follower replication cluster coordination via ZooKeeper and custom binary protocol design. 
 
 ## Key Features
 
@@ -30,17 +30,17 @@ SimpleKafka is a from scratch implementation of core Apache Kafka internals. It 
 
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   Producer   │    │   Consumer   │    │  ZooKeeper   │
+│   Producer  │    │   Consumer  │    │  ZooKeeper  │
 └──────┬──────┘    └──────┬──────┘    └──────┬──────┘
        │                  │                  │
        │           TCP/Binary Protocol       │ Coordination
        │                  │                  │
        └──────────────────┼──────────────────┘
                           ▼
-                    ┌─────────────┐
-                    │Broker Cluster│
-                    │  (3 Nodes)   │
-                    └─────────────┘
+                  ┌────────────────┐
+                  │ Broker Cluster │
+                  │   (3 Nodes)    │
+                  └────────────────┘
 ```
 
 ## Tech Stack
