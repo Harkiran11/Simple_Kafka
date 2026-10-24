@@ -57,16 +57,16 @@ SimpleKafka is a from scratch implementation of core Apache Kafka internals. It 
 ```text
 src/main/java/simplekafka/
 ├── broker/
-│   ├── SimpleKafkaBroker.java   # Broker server request routing and controller logic
-│   ├── Partition.java           # Log storage engine with segments and indexing
-│   ├── Protocol.java            # Binary protocol definitions and encoders
-│   ├── ZookeeperClient.java     # ZooKeeper integration layer
-│   └── BrokerInfo.java          # Broker metadata model
+│   ├── SimpleKafkaBroker.java          # Broker server request routing and controller logic
+│   ├── Partition.java                  # Log storage engine with segments and indexing
+│   ├── Protocol.java                   # Binary protocol definitions and encoders
+│   ├── ZookeeperClient.java            # ZooKeeper integration layer
+│   └── BrokerInfo.java                 # Broker metadata model
 └── client/
-    ├── SimpleKafkaProducer.java # High level producer API
-    ├── SimpleKafkaConsumer.java # High level consumer API
-    ├── SimpleKafkaClient.java   # Low level client implementation
-    └── SimpleKafkaAdmin.java    # Topic administration tool
+    ├── SimpleKafkaProducer.java        # High level producer API
+    ├── SimpleKafkaConsumer.java        # High level consumer API
+    ├── SimpleKafkaClient.java          # Low level client implementation
+    └── SimpleKafkaAdmin.java           # Topic administration tool
 ```
 
 ## Quick Start
